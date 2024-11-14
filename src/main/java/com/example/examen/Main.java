@@ -175,7 +175,7 @@ public class Main {
              PreparedStatement stmt = conn.prepareStatement(consultaSQL)) {
             ResultSet rs = stmt.executeQuery(consultaSQL);
 
-            // Mostrar los resultados de la consulta
+            
             ResultSetMetaData rsmd = rs.getMetaData();
             int columnCount = rsmd.getColumnCount();
             while (rs.next()) {
